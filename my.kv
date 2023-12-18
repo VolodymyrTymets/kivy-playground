@@ -1,0 +1,22 @@
+#:kivy 2.1.0
+
+<LoginScreen>:
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+        GridLayout:
+            rows: 2
+            cols: 2
+            Label:
+                text: 'User Name'
+            TextInput:
+                id: name
+                margin: 10
+            Label:
+                text: 'passowrd'
+            TextInput:
+                id: passowrd
+                margin: 10
+        Button:
+            text:"Submit"
+            on_press: root.on_press()        
